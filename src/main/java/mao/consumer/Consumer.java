@@ -28,7 +28,7 @@ public class Consumer
     public static void main(String[] args) throws MQClientException
     {
         //消费者
-        DefaultMQPushConsumer defaultMQPushConsumer = new DefaultMQPushConsumer();
+        DefaultMQPushConsumer defaultMQPushConsumer = new DefaultMQPushConsumer("mao_group");
         //nameserver
         defaultMQPushConsumer.setNamesrvAddr("127.0.0.1:9876");
         //订阅
