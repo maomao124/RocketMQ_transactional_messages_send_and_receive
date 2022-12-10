@@ -47,5 +47,7 @@ public class Consumer
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
         });
+        //启动
+        defaultMQPushConsumer.start();
     }
 }
